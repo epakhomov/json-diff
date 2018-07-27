@@ -18,11 +18,12 @@ public class App {
 
 		JSONParser jsonParser = new JSONParser();
 		Object object, object2;
+		
 
 		try {
 
-			object = jsonParser.parse(new FileReader("C:\\temp\\01.json"));
-			object2 = jsonParser.parse(new FileReader("C:\\temp\\02.json"));
+			object = jsonParser.parse(new FileReader("01.json"));
+			object2 = jsonParser.parse(new FileReader("02.json"));
 			JSONObject jsonObject = (JSONObject) object;
 			JSONObject jsonObject2 = (JSONObject) object2;
 
